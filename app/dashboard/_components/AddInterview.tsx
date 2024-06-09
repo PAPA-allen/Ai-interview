@@ -20,6 +20,8 @@ function AddInterview() {
 
     const onSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
+
+        const InputPrompt = "Job Positon: " + jobPosition + ", Job Description: " + jobDesc + ", Years of Experience:" + jobExperience + ", Depending on this information please give me " + process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT + " interview questions with answers in Json Format, Give Question and Answers as Field is required in Json and sometimes mix with general life questions"
     }
     return (
         <div>
